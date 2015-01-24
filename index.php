@@ -111,8 +111,8 @@
 			<h1>Store</h1>
 			<p id="storeTitle"></p>
 			<p id="xp"></p> 
-			<button class="shopHeaderButton" id="toggleSellmode" onclick="sellmode =! sellmode;">Sell</button>
-			<button class="shopHeaderButton" id="sellAll" onclick="sellAll();">Sell all</button>
+			<!--<button class="shopHeaderButton" id="toggleSellmode" onclick="sellmode =! sellmode;">Sell</button>
+			<button class="shopHeaderButton" id="sellAll" onclick="sellAll();">Sell all</button>-->
 			<table id="storeTable">
 				<tr>
 					<td class="storeImage"><img class="storeImage" src="data/png/MashedPotatoes.png" /></td>

@@ -124,7 +124,7 @@ function getName() {
 function createItems()
 {
 	storeItems = [];
-	itemMashedPotatoes = new StoreItem("Mashed Potatoes", "MashedPotatoes", 1, 100);
+	itemMashedPotatoes = new StoreItem("Mashed Potatoes", "MashedPotatoes", 1, 50);
 	storeItems.push(itemMashedPotatoes);
 	itemPotatoSalad = new StoreItem("Potato Salad", "PotatoSalad", 5, 500);
 	storeItems.push(itemPotatoSalad);
@@ -138,13 +138,13 @@ function createItems()
 	storeItems.push(itemBigPotato);
 	itemHugePotato = new StoreItem("Huge Potato", "HugePotato", 1000, 1250000);
 	storeItems.push(itemHugePotato);
-	itemPotatoPlanet = new StoreItem("Potato Planet", "PotatoPlanet", 6500, 123456789);
+	itemPotatoPlanet = new StoreItem("Potato Planet", "PotatoPlanet", 6500, 15000000);
 	storeItems.push(itemPotatoPlanet);
-	itemPotatoGod = new StoreItem("Potato God", "PotatoGod", 15000, 1000000000);
+	itemPotatoGod = new StoreItem("Potato God", "PotatoGod", 15000, 100000000);
 	storeItems.push(itemPotatoGod);
-	itemPotatoGalaxy = new StoreItem("Potato Galaxy", "PotatoGalaxy", 30000, 75000000000);
+	itemPotatoGalaxy = new StoreItem("Potato Galaxy", "PotatoGalaxy", 30000, 555555555);
 	storeItems.push(itemPotatoGalaxy);
-	itemPotatoUniverse = new StoreItem("Potato Universe", "PotatoUniverse", 100000,  25000000000000)
+	itemPotatoUniverse = new StoreItem("Potato Universe", "PotatoUniverse", 100000,  1000000000)
 	storeItems.push(itemPotatoUniverse)
 
 	for (var i = 0; i < storeItems.length; i++)
@@ -188,8 +188,8 @@ function update()
 	getByID("perClick").innerHTML = addSpaces(perClick.toFixed(2));
 	getByID("storeTitle").innerHTML = name + "'s potato farm, level " + level + " - XP: " + xp +  " / " + nextXp;
 
-	for (var i = 0; i < storeItems.length; i++)
-	{
+	for (var i = 0; i < storeItems.length; i++) {
+	/*{
 		if (sellmode)
 		{
 			getByID("toggleSellmode").innerHTML = "Buy";
@@ -198,11 +198,11 @@ function update()
 		}
 		else
 		{
-			getByID("toggleSellmode").innerHTML = "Sell";
-			getByID("buy" + storeItems[i].buttonname).innerHTML = storeItems[i].name + ": " + addSpaces(Math.round(storeItems[i].price)) + ", +" + addSpaces(storeItems[i].persecond) + " (" + addSpaces(storeItems[i].owned) + ")";
-			getByID("buy" + storeItems[i].buttonname).title = addSpaces(storeItems[i].owned) + " owned";
-			getByID("buy" + storeItems[i].buttonname).disabled = potatoes < storeItems[i].price ? true : false;
-		}
+		getByID("toggleSellmode").innerHTML = "Sell";*/
+		getByID("buy" + storeItems[i].buttonname).innerHTML = storeItems[i].name + ": " + addSpaces(Math.round(storeItems[i].price)) + ", +" + addSpaces(storeItems[i].persecond) + " (" + addSpaces(storeItems[i].owned) + ")";
+		getByID("buy" + storeItems[i].buttonname).title = addSpaces(storeItems[i].owned) + " owned";
+		getByID("buy" + storeItems[i].buttonname).disabled = potatoes < storeItems[i].price ? true : false;
+		//}
 	}
 
 	if (xp >= nextXp) {
@@ -231,7 +231,7 @@ function unlockAchievement(achievement, shouldAlert) {
 		cell2.innerHTML = achievement.description;
 
 		if (shouldAlert) {
-			alert("Achievement unlocked: " + achievement.title + " - " + achievement.description + " XP + " + achievement.xp);
+			//alert("Achievement unlocked: " + achievement.title + " - " + achievement.description + " XP + " + achievement.xp);
 			xp += achievement.xp;
 		}
 	}
