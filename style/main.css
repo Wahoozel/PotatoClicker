@@ -1,0 +1,354 @@
+html,body
+{
+	width: 100%;
+	height:100vh; /* This is needed to overcome a Chrome bug. */
+    width:100vw;  /* As above. */
+	margin: 0px;
+	padding: 0px;
+	background-image: linear-gradient(#1e415e 20%, #2b5b84 80%);
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+@font-face {
+    font-family: 'Oswald';
+}
+
+p
+{
+	font-family: 'Oswald';
+	font-size: 16px;
+	color: white;
+}
+
+h1
+{
+	font-family: 'Oswald', bold;
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+h2
+{
+	font-family: 'Oswald';
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+#areaLeft
+{
+    height: 100vh;
+    width: 25vw;
+	float: left;
+	overflow-y: auto;
+}
+
+#areaMiddle
+{
+    height: 100vh;
+    width: 50vw;
+	float: left;
+	overflow-y: auto;
+}
+
+#areaRight
+{
+    height: 100vh;
+    width: 25vw;
+	float: left;
+	overflow-y: auto;
+}
+
+#game
+{
+	min-height: 100%;
+}
+
+#potatoWrapper
+{
+	min-width: 100%;
+}
+
+#potato
+{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+	font-family: 'Oswald';
+	color: white;
+}
+
+#potatoCointainer
+{
+	width: 100%;
+	height: 100%;
+}
+
+#potatoImg
+{
+	margin-left: auto;
+	margin-right: auto;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#potatoText
+{
+	width: 100%;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+#store
+{
+	text-align: center;
+}
+
+#storeTable
+{
+	width: 100%;
+	padding: 0px;
+}
+
+.storeImage
+{
+	width: 64px;
+	height: 64px;
+}
+
+.storeButton
+{
+ 	width: 100%;
+    height: 64px;
+    margin-bottom: 4px;
+    text-align: left;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: #2b5b84;
+	font-family: 'Oswald';
+	color: white;
+}
+
+.storeButtonSell
+{
+ 	width: 100%;
+    height: 64px;
+    margin-bottom: 4px;
+    text-align: left;
+    float: left;
+    border: none;
+    outline: none;
+    background-color: #2b5b84;
+	font-family: 'Oswald';
+	color: white;
+}
+
+.shopHeaderButton
+{
+ 	width: 48%;
+    height: 32px;
+    margin: 4px;
+    text-align: center;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: #2b5b84;
+	font-family: 'Oswald';
+	color: white;
+}
+
+.storeButton:hover
+{
+	background-color: #326A99;
+	transition: background-color 150ms linear;
+}
+
+.storeButton:active
+{
+	background-color: #2b5b84;
+}
+
+.storeButton:disabled
+{
+	color: lightgray;
+	background-color: #1B3A54;
+}
+
+.storeButtonSell:hover
+{
+	background-color: #326A99;
+	transition: background-color 150ms linear;
+}
+
+.storeButtonSell:active
+{
+	background-color: #2b5b84;
+}
+
+.storeButtonSell:disabled
+{
+	color: lightgray;
+	background-color: #1B3A54;
+}
+
+.shopHeaderButton:hover
+{
+	background-color: #326A99;
+	transition: background-color 150ms linear;
+}
+
+.shopHeaderButton:active
+{
+	background-color: #2b5b84;
+}
+
+.shopHeaderButton:disabled
+{
+	color: lightgray;
+	background-color: #1B3A54;
+}
+
+#stats
+{
+	text-align: center;
+}
+
+.optionButton
+{
+ 	width: 164px;
+    height: 32px;
+    margin-top: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #2b5b84;
+	font-family: 'Kavoon';
+	color: white;
+}
+
+.optionButton:hover
+{
+	background-color: #326A99;
+	transition: background-color 150ms linear;
+}
+
+.optionButton:active
+{
+	background-color: #2b5b84;
+}
+
+#statsTable
+{
+	width: 100%;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+#achievementsTable
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+}
+
+.statistic
+{
+	width: 50%;
+	font-family: 'Oswald';
+	color: white;
+}
+
+.achievement
+{
+	width: 50%;
+	font-family: 'Oswald';
+	color: white;
+	border-top: solid white 1px;
+}
+
+.achievementLocked
+{
+	width: 50%;
+	font-family: 'Oswald';
+	color: gray;
+	border-top: solid gray 1px;
+}
+
+#social
+{
+	position: absolute;
+	margin-left: 3px;
+	bottom: 0;
+}
+
+#tabs a
+{
+	font-family: 'Oswald';
+	text-decoration: underline;
+    outline: none;
+	color: white;
+}
+
+#tabs ul
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tabs ul li
+{
+	width: 180px;
+	text-align: center;
+    border: none;
+	display: inline;
+	padding: 5px;
+}
+
+#storeTabs a
+{
+	font-family: 'Oswald';
+	text-decoration: underline;
+    outline: none;
+	color: white;
+}
+
+#storeTabs ul
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#storeTabs ul li
+{
+	width: 180px;
+	text-align: center;
+    border: none;
+	display: inline;
+	padding: 5px;
+}
+
+#updates
+{
+	padding-left: 20px;
+	text-align: left;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

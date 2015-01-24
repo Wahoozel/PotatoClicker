@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^potatoclicker.com [NC]
+RewriteRule ^(.*)$ http://www.potatoclicker.com/$1 [L,R=301]
